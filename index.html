@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RETO5</title>
+    <!-- Bootstrap -->
+ <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+  <!-- Importaciones basicas Jquery y funciones.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	  <script type="text/javascript" src="js/functions.js"></script>
+    </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Biblioteca</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+           <a class="nav-link" href="index.html">Gestion de Bibliotecas<span class="sr-only">(current)</span></a>
+          </li>
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENUS</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="library.html">Salas de Lectura</a>
+              <a class="dropdown-item" href="category.html">Categorias</a>
+				<a class="dropdown-item" href="client.html">Clientes</a>
+				<a class="dropdown-item" href="message.html">Mensajes</a>
+				<a class="dropdown-item" href="reservation.html">Reservas</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="admin.html">Administradores</a>
+            </div>
+          </li>
+        </ul>
+       </div>
+    </nav>
+	  
+<div class="container">
+<div class="col-12">
+<div class="row">
+<div class="col-lg-6 col-12">
+		<!-- Búsqueda Google -->
+<center>
+<form method=GET action="http://www.google.com/search">
+<TABLE bgcolor="#FFFFFF"><tr><td>
+<a HREF= "http://www.google.com" alt="CNICE"> 
+<img src="http://www.google.com/logos/Logo_40wht.gif" border="0" ALT="Google" align= "absmiddle"></a>
+<INPUT TYPE=text name=q size=31 maxlength=255 value="Buscar">
+<INPUT TYPE=hidden name=hl value=es>
+<INPUT type=submit name=btnG value="Búsqueda"> </th></tr></TABLE>
+</form>
+</center>
+<!-- Búsqueda Google -->
+</div>
+</div>
+</div>
+</div>
+	  
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+              <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="sitio/images/carrusel1.jpg" alt="Textos">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color:rgb(255,0,0);">150000 Textos</h5>
+                  <p>Inventario digital y fisico</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="sitio/images/carrusel2.jpg" alt="Bioseguridad">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color:rgb(255,0,0);">Protección y Bioseguridad</h5>
+                  <p style="color:black;">Ambientes Sanos e inocuos</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="sitio/images/carrusel3.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color:rgb(255,0,0);">Múltiples Idiomas y Temáticas</h5>
+                  <p>Disponibilidad de idiomas y temáticas</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="mr-3 rounded-circle" src="sitio/images/categorias.png" alt="imagen">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Categorias</h5>
+                  <p class="mb-0">Categorias<br>
+                  <a href="category.html" class="btn btn-primary">Ingreso</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="mr-3 rounded-circle" src="sitio/images/clientes.jpg" alt="imagen">
+                <div class="media-body ">
+                  <h5 class="mt-0 mb-1">Clientes</h5>
+                <p class="mb-0">Usuarios<br>
+                  <a href="client.html" class="btn btn-primary">Ingreso</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 d-md-none d-lg-block">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="mr-3 rounded-circle" src="sitio/images/mensajes.jpg" alt="imagen">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Mensajes</h5>
+                  <p class="mb-0">Comunicaciones<br>
+                  <a href="message.html" class="btn btn-primary">Ingreso</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-12">
+          <div class="row">
+            <div class="col-sm-6 col-12">
+              <div class="card">
+                <img class="card-img-top" src="sitio/images/usuarios.png" alt="imagen">
+                <div class="card-body">
+                  <h5 class="card-title">Administradores</h5>
+                  <p class="card-text">Información de Administradores</p>
+                  <a href="admin.html" class="btn btn-primary">Ingreso</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+              <div class="card">
+                <img class="card-img-top" src="sitio/images/reservas.jpg" alt="reservas">
+                <div class="card-body">
+                  <h5 class="card-title">Reservaciones</h5>
+                  <p class="card-text">Reserve y Gestione su sala de Lectura.</p>
+                  <a href="reservation.html" class="btn btn-primary">Ingreso</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <hr>
+        <div class="col-lg-4 col-12">
+          <div class="row mx-0">
+            <div class="col-12 card bg-light mx-auto">
+              <h3 class="text-center card-header">REPOSITORIO</h3>
+			<p><a href="https://github.com/carlosreymt/reto5">Reto 5</a></p>
+                            
+               
+            </div>
+                </div>
+             </div>
+            <div class="col-12">
+              <h3 class="text-center">Mision TIC 2022</h3>
+              <hr>
+              <div class="media">
+                <img class="mr-3" src="sitio/images/MTIC.png" alt="MTIC">
+                <div class="media-body">
+                  <h5 class="mt-0">Mision TIC 2022</h5>
+                   <p>Talento TIC - Formando Programadores</p>
+                </div>
+              </div>
+              <div class="media mt-2">
+                <img class="mr-3" src="sitio/images/LOGO.PNG" alt="LOGO">
+                <div class="media-body">
+                  <h5 class="mt-0">Entidad</h5>
+                  <p>Ciclo 3 Octubre 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <h3>Salas de Lectura</h3>
+            <hr>
+            <div class="row">
+              <div class="col-4">
+                <div class="text-center"> <img src="sitio/images/1.jpg" alt="Sala 1"> </div>
+              </div>
+              <div class="col-4">
+                <div class="text-center"> <img src="sitio/images/2.jpg" alt="Sala 2"></div>
+              </div>
+              <div class="col-4">
+                <div class="text-center"> <img src="sitio/images/3.jpg" alt="Sala 3"></div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-4">
+                <div class="text-center"> <img src="sitio/images/4.jpg" alt="Sala 4"></div>
+              </div>
+              <div class="col-4">
+                <div class="text-center"> <img src="sitio/images/5.jpg" alt="Sala 5"></div>
+              </div>
+              <div class="col-4">
+                <div class="text-center"> <img src="sitio/images/6.jpg" alt="Sala 6"></div>
+              </div>
+            </div>
+            <hr>
+            
+            <hr>
+          </div>
+                  </div>
+      </div>
+    </section>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-12">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <h3>Nosotros</h3>
+              <hr>
+              <h5>Grupo 13 Ciclo 3 Desarrollo de Software</h5>
+              <p> Juan Diego Arenas Cuellar	<br>
+ Carlos Alberto Rey Ardila <br>
+ Edgar Mauricio Abaunza Pinzon <br>
+ Darly Fernanda Sandoval Plazas	<br>
+ Adriana Feo Osma <br>
+ </p>
+            </div>
+            <div class="col-lg-6 col-12">
+              <h3>Desarrollo</h3>
+              <hr>
+              <div>
+            <div class="media">
+              <div class="media-body">
+                <h4 class="mt-0 mb-1">Frontend</h4>
+                Frontend desarrollado con plantilla Creative Commons </div>
+              <a href="#"><img class="ml-3" src="sitio/images/indice.png" alt="creative"></a> </div>
+            <div class="media">
+              <div class="media-body">
+                <h4 class="mt-0 mb-1">Backend</h4>
+                Aplicación desarrollada apartir de Springboot, alojada en Oracle Cloud </div>
+              <a href="#"><img class="ml-3" src="sitio/images/indice2.png" alt="springboot"></a> </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 mt-md-0 mt-2">
+          <h3>Contáctenos</h3>
+          <hr>
+          <address>
+            <strong>Mision TIC 2022</strong><br>
+            Universidad Sergio Arboleda<br>
+            Bogota - Colombia<br>
+           </address>
+          <address>
+            <strong>Emails Contacto</strong><br>
+            <a href="mailto:#">edgar.abaunza.mt@usa.edu.co</a><br>
+			<a href="mailto:#">juan.arenas.mt@usa.edu.co</a><br>
+			<a href="mailto:#">adriana.feo.mt@usa.edu.co</a><br>
+			<a href="mailto:#">carlos.rey.mt@usa.edu.co</a><br>
+			<a href="mailto:#">darly.sandoval.mt@usa.edu.co</a><br>
+          </address>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © Grupo13 Ciclo 3 </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
